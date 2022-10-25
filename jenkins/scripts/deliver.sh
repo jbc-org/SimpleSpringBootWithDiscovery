@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo 'Here is the DOCKER LOGIN'
-
+echo 'Initiating Docker build'
+docker build --push -t jbcuningham/spring-boot-with-discovery .
 
