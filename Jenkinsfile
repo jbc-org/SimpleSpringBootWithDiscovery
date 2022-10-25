@@ -37,6 +37,7 @@ pipeline
         }
         stage('Deliver') 
         {
+        steps {
             node 
             {
                 def app
@@ -52,7 +53,7 @@ pipeline
                 app.push("${env.BUILD_NUMBER}")
                 app.push("latest")
                 }
-            }
+            }}
         }
     }
 }
