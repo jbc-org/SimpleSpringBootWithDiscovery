@@ -93,7 +93,6 @@ node {
         docker.withRegistry('https://registry.hub.docker.com', 'dckr_pat_DGNwvPqjHz_3dV2QcrHAwL-GYAA') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
-            app.
         }
     }
 }
